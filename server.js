@@ -1,0 +1,20 @@
+const express = require('express');
+const indexRoutes = require("./routes/index");
+const notesRoutes = require("./routes/notes");
+
+// Creating port and starting server
+const PORT = 3001;
+const app = express();
+
+// Middleware for parsing JSON and url encoded data
+// JSON parse our data coming in
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
+app.use('/api', notesRoutes);
+app.use('/', indexRoutes)
+
+//Listening port
+app.listen(PORT, () =>
+    console.log(`Server available at http://localhost:${PORT}`)
+);
