@@ -3,7 +3,7 @@ const indexRoutes = require("./routes/index");
 const notesRoutes = require("./routes/notes");
 
 // Creating port and starting server
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 // Middleware for parsing JSON and url encoded data
