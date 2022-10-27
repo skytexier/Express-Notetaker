@@ -10,8 +10,7 @@ const app = express();
 // JSON parse our data coming in
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
-
+app.use(express.static('public'))
 //Use routes information
 app.use('/api', notesRoutes);
 app.use('/', indexRoutes)
