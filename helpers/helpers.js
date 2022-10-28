@@ -8,6 +8,7 @@ const readFromFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
 // Helper class to contain read, write, getnotes, createnotes and delete notes function
+// The format for this helper class and their functions came from our course materials
 class Helper {
   //Basic read function calling readFromFile
   read() {
@@ -48,7 +49,7 @@ class Helper {
       .then(() => newNote);
   }
 
-  // Function to delete notes based off ID
+  // Function to delete notes based off ID 
   deleteNote(id) {
     //Get all notes
     return this.getNote()
