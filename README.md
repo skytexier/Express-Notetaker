@@ -1,4 +1,3 @@
-
 # Express Note Taker
 
 ## Description
@@ -11,14 +10,17 @@ The hardest part of creating this application was getting the helper functions t
 provided a lot of useful tools/tips for creating those helper functions/functions in general.
 
 ## Table of Contents
-- [Installation] (#installation)
-- [Link to Walkthrough] (#live)
-- [Usage/Examples] (#usage)
-- [Credits] (#credits)
-- [License] (#license)
-## Link To Live URL (HEROKU)
+- [Installation](#installation)
+- [Link to Walkthrough](#live-(HEROKU))
+- [Usage/Examples](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-- [https://skytexier.github.io/Weather-Dashboard/](https://skytexier.github.io/Weather-Dashboard/)
+
+## Live-(HEROKU)
+
+- [https://secret-everglades-51366.herokuapp.com/](https://secret-everglades-51366.herokuapp.com/)
+
 ## Installation
 
 The required installs for this application are listed in the package dependencies, so running `npm i` to install these packages is necessary.
@@ -26,13 +28,24 @@ Besides that no installation is require as this server runs on Heroku or on loca
 
 
 ## Usage/Examples
+Here a user can type in a title for their note and add subtext, then they can click the save icon in the top right to save said note.
+![alt text](./Assets/example1.png)
 
-[This is a video link](https://drive.google.com/file/d/1lR3U2a_Tx7InEp64oWyv1Cja1pxxRUW-/view?usp=sharing) to a basic walkthrough of how this application works. Aside from this one must run `node index` in their terminal to begin the proccess.
+As pictured this server will save all notes and allow for the deletion of notes too.
+![alt text](./Assets/example2.png)
 
-Here is a screenshot of what the terminal looks like when generating this HTML page.
-
-![alt text](./Assets/terminal.png)
 ## Credits
+A lot of stackoverflow for debugging.
+- [https://stackoverflow.com/](https://stackoverflow.com/)
+W3Schools on writing errors and understanding how to create error responses.
+- [https://www.w3schools.com/js/js_errors.asp](https://www.w3schools.com/js/js_errors.asp)
+Better understanding concat string methods.
+- [https://www.w3schools.com/jsref/jsref_concat_string.asp](https://www.w3schools.com/jsref/jsref_concat_string.asp)
+Geeksforgeeks to better understand res functions and Node.js in general
+- [https://www.geeksforgeeks.org/express-js-res-json-function/](https://www.geeksforgeeks.org/express-js-res-json-function/)
+- [https://www.geeksforgeeks.org/nodejs/?ref=lbp](https://www.geeksforgeeks.org/nodejs/?ref=lbp)
+
+For this assignment I had to refer back to a lot of course work and some solved solutions as I missed a week of class due to a family emergency, besides this I also referred to [Ish](https://github.com/ianad389) once again for his notes on how to set up the helper functions although we ended up doing them slightly differently. 
 
 ## License
 MIT License
